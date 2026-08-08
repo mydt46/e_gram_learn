@@ -19,6 +19,7 @@ const words = [
                 ]
             }
         ],
+        translate: [],
         context: [
             {
                 situation: "- Trọng âm không bao giờ rơi vào âm /ə/hoặc là âm /əʊ/.\nví dụ:\nmother / ˈmʌðə /: trọng âm rơi vào âm tiết thứ nhất vì âm thứ hai có chứa âm / ə /\nhotel / ˌhəʊˈtel /: trọng âm rơi vào âm tiết thứ hai vì âm thứ nhất có chứa âm / əʊ /.\n*Lưu ý: Nếu như trong một từ có chứa cả hai loại âm là / ə / và / əʊ / thì trọng âm rơi vào phần có chứa âm / əʊ /\nVí dụ:\nsuppose / səˈpəʊz /: trọng âm rơi vào âm thứ hai\nago / əˈɡəʊ /: trọng âm rơi vào âm thứ hai\nopponent / əˈpəʊnənt /: trọng âm rơi vào âm thứ hai.",

@@ -10,12 +10,12 @@ function normalize(str){
 }
 
 let totalChecks = 0;
-let correctIds = new Set();
+const correctInputs = new Set();
 
 function renderTally(){
   const marksEl = document.getElementById('tally-marks');
   marksEl.innerHTML = "";
-  const correct = correctIds.size;
+  const correct = correctInputs.size;
   for(let i=0;i<correct;i++){
     const m = document.createElement('div');
     m.className = 'mark';
@@ -28,9 +28,6 @@ function renderTally(){
   }
   document.getElementById('tally-count').textContent = correct + "/" + totalChecks;
 }
-
-let uid = 0;
-function nextId(){ return "chk_" + (uid++); }
 
 function resizePracticeRow(row){
   const reference = row.querySelector('.practice-reference');
@@ -49,15 +46,15 @@ function resizePracticeRows(){
   });
 }
 
-function attachChecker(inputEl, feedbackEl, answer, checkId){
-  let counted = false;
+function attachChecker(inputEl, feedbackEl, answer){
   inputEl.addEventListener('input', () => {
     const val = inputEl.value;
     if(val.trim() === ""){
       inputEl.classList.remove('state-correct','state-incorrect');
       feedbackEl.textContent = "";
       feedbackEl.className = "feedback-icon";
-      if(counted){ counted = false; correctIds.delete(checkId); renderTally(); }
+      correctInputs.delete(inputEl);
+      renderTally();
       return;
     }
     const isCorrect = normalize(val) === normalize(answer);
@@ -66,13 +63,13 @@ function attachChecker(inputEl, feedbackEl, answer, checkId){
       inputEl.classList.remove('state-incorrect');
       feedbackEl.textContent = "✓ Chính xác";
       feedbackEl.className = "feedback-icon correct";
-      if(!counted){ counted = true; correctIds.add(checkId); }
+      correctInputs.add(inputEl);
     }else{
       inputEl.classList.add('state-incorrect');
       inputEl.classList.remove('state-correct');
       feedbackEl.textContent = "✗ Chưa đúng";
       feedbackEl.className = "feedback-icon incorrect";
-      if(counted){ counted = false; correctIds.delete(checkId); }
+      correctInputs.delete(inputEl);
     }
     renderTally();
   });
@@ -112,6 +109,15 @@ function speak(text, btnEl){
 
 const speakerSVG = `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 8 9 13 4 13 20 8 15 3 15 3 9"></polygon><path d="M16 8a5 5 0 0 1 0 8"></path><path d="M19 5a9 9 0 0 1 0 14"></path></svg>`;
 
+function createSpeakButton(text){
+  const button = el('button', {
+    class:'speak-btn', type:'button', 'aria-label':'Đọc câu tiếng Anh'
+  });
+  button.innerHTML = speakerSVG;
+  button.addEventListener('click', () => speak(text, button));
+  return button;
+}
+
 /* ---------------- Render ---------------- */
 
 function el(tag, props={}, children=[]){
@@ -127,7 +133,6 @@ function el(tag, props={}, children=[]){
 
 function buildPracticeRow(item){
   totalChecks++;
-  const checkId = nextId();
   const row = el('div', {class:'practice-row'});
 
   // sentence_vi — disabled reference, 50%
@@ -149,13 +154,10 @@ function buildPracticeRow(item){
 
   // speaker — 10%
   const speakField = el('div', {class:'field w-speak'});
-  const btn = el('button', {class:'speak-btn', type:'button', 'aria-label':'Đọc câu tiếng Anh'});
-  btn.innerHTML = speakerSVG;
-  btn.addEventListener('click', () => speak(item.sentence_en, btn));
-  speakField.appendChild(btn);
+  speakField.appendChild(createSpeakButton(item.sentence_en));
   row.appendChild(speakField);
 
-  attachChecker(enInput, feedback, item.sentence_en, checkId);
+  attachChecker(enInput, feedback, item.sentence_en);
   return row;
 }
 
@@ -163,7 +165,6 @@ function buildContextPracticeRow(item){
   const row = el('div', {class:'practice-row'});
 
   totalChecks++;
-  const viId = nextId();
   const viField = el('div', {class:'field w-half'});
   viField.appendChild(el('label', {text:'Viết lại câu tiếng Việt'}));
   const viInput = el('input', {type:'text', placeholder:'Nhập câu tiếng Việt...'});
@@ -171,41 +172,55 @@ function buildContextPracticeRow(item){
   viField.appendChild(viInput);
   viField.appendChild(viFeedback);
   row.appendChild(viField);
-  attachChecker(viInput, viFeedback, item.sentence_vi, viId);
+  attachChecker(viInput, viFeedback, item.sentence_vi);
 
   totalChecks++;
-  const enId = nextId();
   const enField = el('div', {class:'field w-half'});
   enField.appendChild(el('label', {text:'Dịch sang tiếng Anh'}));
   const enRow = el('div', {style:'display:flex; gap:8px; align-items:flex-start;'});
   const enInput = el('input', {type:'text', placeholder:'Nhập câu tiếng Anh...'});
   enInput.style.flex = "1";
-  const btn = el('button', {class:'speak-btn', type:'button', 'aria-label':'Đọc câu tiếng Anh'});
-  btn.innerHTML = speakerSVG;
-  btn.addEventListener('click', () => speak(item.sentence_en, btn));
   enRow.appendChild(enInput);
-  enRow.appendChild(btn);
+  enRow.appendChild(createSpeakButton(item.sentence_en));
   const enFeedback = el('div', {class:'feedback-icon'});
   enField.appendChild(enRow);
   enField.appendChild(enFeedback);
   row.appendChild(enField);
-  attachChecker(enInput, enFeedback, item.sentence_en, enId);
+  attachChecker(enInput, enFeedback, item.sentence_en);
 
   return row;
 }
 
 function buildLesson(lesson){
-  const sheet = el('div', {class:'sheet-wrap'});
-
   const title = el('h1', {class:'page-title', text: lesson.title});
-  const sub = el('div', {class:'page-sub', text:'============='});
+  const sub = el('div', {
+    class:'page-sub lesson-tabs', role:'tablist', 'aria-label':'Lesson sections'
+  });
+  const usageTab = el('button', {
+    id:'usage-tab', class:'lesson-tab active', type:'button', role:'tab',
+    'aria-selected':'true', 'aria-controls':'usage-panel', text:'Usage'
+  });
+  const contextTab = el('button', {
+    id:'context-tab', class:'lesson-tab', type:'button', role:'tab',
+    'aria-selected':'false', 'aria-controls':'context-panel', text:'Context'
+  });
+  sub.appendChild(usageTab);
+  const translateTab = el('button', {
+    id:'translate-tab', class:'lesson-tab', type:'button', role:'tab',
+    'aria-selected':'false', 'aria-controls':'translate-panel', text:'Translate'
+  });
+  sub.appendChild(translateTab);
+  sub.appendChild(contextTab);
 
   const app = document.getElementById('app');
   app.appendChild(title);
   app.appendChild(sub);
 
   // --- Content sheet ---
-  const contentSheet = el('div', {class:'sheet'});
+  const contentSheet = el('div', {
+    class:'sheet lesson-panel', id:'usage-panel', role:'tabpanel',
+    'aria-labelledby':'usage-tab'
+  });
   contentSheet.appendChild(el('div', {class:'section-title'}, [
     el('span', {text:'Luyện câu'}),
     el('span', {class:'chip', text:'content'})
@@ -220,8 +235,38 @@ function buildLesson(lesson){
   });
   app.appendChild(contentSheet);
 
+  // --- Translate sheet ---
+  const translateSheet = el('div', {
+    class:'sheet lesson-panel', id:'translate-panel', role:'tabpanel',
+    'aria-labelledby':'translate-tab'
+  });
+  translateSheet.hidden = true;
+  translateSheet.appendChild(el('div', {class:'section-title'}, [
+    el('span', {text:'Dịch câu'}),
+    el('span', {class:'chip', text:'translate'})
+  ]));
+  translateSheet.appendChild(el('div', {class:'underline'}));
+
+  if(lesson.translate.length === 0){
+    translateSheet.appendChild(el('p', {
+      class:'empty-panel', text:'Chưa có bài luyện dịch.'
+    }));
+  }else{
+    lesson.translate.forEach(block => {
+      const wrap = el('div', {class:'exercise-block'});
+      if(block.use) wrap.appendChild(el('p', {class:'use-title', text:block.use}));
+      block.practice.forEach(item => wrap.appendChild(buildPracticeRow(item)));
+      translateSheet.appendChild(wrap);
+    });
+  }
+  app.appendChild(translateSheet);
+
   // --- Context sheet ---
-  const contextSheet = el('div', {class:'sheet'});
+  const contextSheet = el('div', {
+    class:'sheet lesson-panel', id:'context-panel', role:'tabpanel',
+    'aria-labelledby':'context-tab'
+  });
+  contextSheet.hidden = true;
   contextSheet.appendChild(el('div', {class:'section-title'}, [
     el('span', {text:'Context:'}),
     el('span', {class:'chip', text:'context'})
@@ -241,6 +286,22 @@ function buildLesson(lesson){
     contextSheet.appendChild(wrap);
   });
   app.appendChild(contextSheet);
+
+  const selectTab = (selectedTab, selectedPanel) => {
+    [usageTab, translateTab, contextTab].forEach(tab => {
+      const active = tab === selectedTab;
+      tab.classList.toggle('active', active);
+      tab.setAttribute('aria-selected', String(active));
+    });
+    contentSheet.hidden = selectedPanel !== contentSheet;
+    translateSheet.hidden = selectedPanel !== translateSheet;
+    contextSheet.hidden = selectedPanel !== contextSheet;
+    resizePracticeRows();
+  };
+
+  usageTab.addEventListener('click', () => selectTab(usageTab, contentSheet));
+  translateTab.addEventListener('click', () => selectTab(translateTab, translateSheet));
+  contextTab.addEventListener('click', () => selectTab(contextTab, contextSheet));
 }
 
 words.forEach(buildLesson);

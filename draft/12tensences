@@ -35,3 +35,30 @@ Dịch các câu trên sang tiếng việt và diễn tả chúng như data sau:
         sentence_en: "Minh works for a software company",
     },
 ]
+
+Hãy tự tạo data cho "Câu nghi vấn của thì hiện tại đơn" theo cấu trúc sau:
+[
+    {
+        sentence_vi: "Minh làm việc tại một công ty phần mềm",
+        sentence_en: "Minh works for a software company",
+    },
+]
+
+Tôi cần luyện tập sử dụng "thì hiện tại đơn". Hãy tự tạo 1 đoạn ngữ cảnh, diễn đạt ngữ cảnh đó bằng 5-7 câu. Và thể hiện data đó dưới cấu trúc sau:
+{
+    situation: "Minh làm việc tại một công ty phần mềm. Anh ấy thường thức dậy lúc 6 giờ 30 mỗi sáng. Sau khi thức dậy, anh ấy uống một cốc nước và tập thể dục khoảng 20 phút. Anh ấy không ăn sáng ở nhà vì thường mua đồ ăn trên đường đến công ty. Công việc của Minh bắt đầu lúc 8 giờ 30. Anh ấy làm việc với một nhóm gồm năm người và thường có cuộc họp vào sáng thứ Hai. Minh thích công việc của mình vì anh ấy được gặp và giải quyết nhiều vấn đề thú vị.",
+    practice: [
+        {
+            sentence_vi: "Minh làm việc tại một công ty phần mềm",
+            sentence_en: "Minh works for a software company",
+        },
+        {
+            sentence_vi: "Anh ấy thường thức dậy lúc 6 giờ 30 mỗi sáng",
+            sentence_en: "He usually gets up at 6:30 every morning",
+        },
+        {
+            sentence_vi: "Sau khi thức dậy, anh ấy uống một cốc nước và tập thể dục khoảng 20 phút",
+            sentence_en: "After he gets up, he drinks a glass of water and exercises for about twenty minutes",
+        }
+    ]
+},
