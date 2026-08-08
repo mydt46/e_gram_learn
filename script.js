@@ -32,6 +32,23 @@ function renderTally(){
 let uid = 0;
 function nextId(){ return "chk_" + (uid++); }
 
+function resizePracticeRow(row){
+  const reference = row.querySelector('.practice-reference');
+  const answer = row.querySelector('.practice-answer');
+  if(!reference || !answer) return;
+
+  reference.style.height = "auto";
+  const height = Math.max(42, reference.scrollHeight);
+  reference.style.height = height + "px";
+  answer.style.height = height + "px";
+}
+
+function resizePracticeRows(){
+  document.querySelectorAll('.practice-reference').forEach(reference => {
+    resizePracticeRow(reference.closest('.practice-row'));
+  });
+}
+
 function attachChecker(inputEl, feedbackEl, answer, checkId){
   let counted = false;
   inputEl.addEventListener('input', () => {
@@ -116,7 +133,7 @@ function buildPracticeRow(item){
   // sentence_vi — disabled reference, 50%
   const viField = el('div', {class:'field w-vi'});
   viField.appendChild(el('label', {text:'Tiếng Việt'}));
-  const viInput = el('input', {type:'text', disabled:'true'});
+  const viInput = el('textarea', {class:'practice-reference', disabled:'true', rows:'1'});
   viInput.value = item.sentence_vi;
   viField.appendChild(viInput);
   row.appendChild(viField);
@@ -124,7 +141,7 @@ function buildPracticeRow(item){
   // sentence_en — user input, checked, 40%
   const enField = el('div', {class:'field w-en'});
   enField.appendChild(el('label', {text:'Dịch sang tiếng Anh'}));
-  const enInput = el('input', {type:'text', placeholder:'Nhập câu tiếng Anh...'});
+  const enInput = el('textarea', {class:'practice-answer', rows:'1', placeholder:'Nhập câu tiếng Anh...'});
   const feedback = el('div', {class:'feedback-icon'});
   enField.appendChild(enInput);
   enField.appendChild(feedback);
@@ -227,4 +244,7 @@ function buildLesson(lesson){
 }
 
 words.forEach(buildLesson);
+resizePracticeRows();
+window.addEventListener('load', resizePracticeRows);
+window.addEventListener('resize', resizePracticeRows);
 renderTally();

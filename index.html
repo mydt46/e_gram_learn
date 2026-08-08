@@ -3,22 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grammar english</title>
+<title>English Grammar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="tally">
-  <span class="label">Đúng</span>
-  <div id="tally-marks"></div>
-  <span id="tally-count">0/0</span>
-</div>
+<nav class="top-menu" aria-label="Điều hướng bài học">
+  <a class="top-menu__brand" href="index.html" aria-current="page">GrammarHome</a>
+  <div class="top-menu__links">
+    <a href="01.html">· Present tense</a>
+    <a href="02.html">· Past tense</a>
+  </div>
+</nav>
 
-<div id="app"></div>
+<main class="home-page">
+  <header class="home-hero">
+    <h1 class="page-title">Grammar lessons</h1>
+    <p class="home-intro">Chọn một chủ đề để bắt đầu luyện tập.</p>
+  </header>
 
-<script src="data.js"></script>
-<script src="script.js"></script>
+  <section class="lesson-grid" aria-label="Danh sách bài học">
+    <a class="lesson-button" href="01.html">
+      <span class="lesson-title">The present tense</span>
+      <span class="lesson-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="lesson-button" href="02.html">
+      <span class="lesson-title">The past tense</span>
+      <span class="lesson-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="lesson-button" href="03.html">
+      <span class="lesson-title">The future tense</span>
+      <span class="lesson-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="lesson-button" href="04.html">
+      <span class="lesson-title">The fut tense</span>
+      <span class="lesson-arrow" aria-hidden="true">→</span>
+    </a>
+  </section>
+</main>
 </body>
 </html>
