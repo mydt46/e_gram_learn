@@ -198,7 +198,7 @@ function buildLesson(lesson){
   const sheet = el('div', {class:'sheet-wrap'});
 
   const title = el('h1', {class:'page-title', text: lesson.title});
-  const sub = el('div', {class:'page-sub', text:'S + Vs/es / S + tobe'});
+  const sub = el('div', {class:'page-sub', text:'============='});
 
   const app = document.getElementById('app');
   app.appendChild(title);

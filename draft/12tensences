@@ -1,0 +1,37 @@
+
+-- Lý thuyết
+Ô 1:
+    - công thức
+Ô 2:
+    - Các ví dụ thể hiện các cách dùng
+Ô 3:
+    - Note chú ý của bản thân
+Ô 4:
+    - Bài tập
+
+-- chú ý
+Cần thực hành các câu khẳng định(+), phủ định(-), nghi vấn(?)
+
+=======================================================
+"Nhìn thấy tình huống --> tạo câu"
+
+Context --> Meaning --> Sentence (--> giải thích)
+Nhìn/hình dung "Ngữ cảnh"
+--> Ý mình muốn diễn đạt là gì
+--> xác định cấu trúc sử dụng
+--> Diễn đạt thành 1 câu
+
+
+Điều mình cần làm để thực hiện process trên:
+- Liệt kê các ngữ cảnh xảy ra có thể sử dụng thì đó
+- Các ví dụ đi kèm để ghi nhớ
+- Rèn luyện các ngữ cảnh khác nhau để làm quen với cách thể hiện này
+
+===================================================
+Dịch các câu trên sang tiếng việt và diễn tả chúng như data sau:
+[
+    {
+        sentence_vi: "Minh làm việc tại một công ty phần mềm",
+        sentence_en: "Minh works for a software company",
+    },
+]
