@@ -46,7 +46,7 @@ function resizePracticeRows(){
   });
 }
 
-function attachChecker(inputEl, feedbackEl, answer){
+function attachChecker(inputEl, feedbackEl, answer, onCorrect){
   inputEl.addEventListener('input', () => {
     const val = inputEl.value;
     if(val.trim() === ""){
@@ -58,12 +58,14 @@ function attachChecker(inputEl, feedbackEl, answer){
       return;
     }
     const isCorrect = normalize(val) === normalize(answer);
+    const wasCorrect = correctInputs.has(inputEl);
     if(isCorrect){
       inputEl.classList.add('state-correct');
       inputEl.classList.remove('state-incorrect');
       feedbackEl.textContent = "✓ Chính xác";
       feedbackEl.className = "feedback-icon correct";
       correctInputs.add(inputEl);
+      if(!wasCorrect && onCorrect) onCorrect();
     }else{
       inputEl.classList.add('state-incorrect');
       inputEl.classList.remove('state-correct');
@@ -156,10 +158,13 @@ function buildPracticeRow(item){
 
   // speaker — 10%
   const speakField = el('div', {class:'field w-speak'});
-  speakField.appendChild(createSpeakButton(item.sentence_en));
+  const speakButton = createSpeakButton(item.sentence_en);
+  speakField.appendChild(speakButton);
   row.appendChild(speakField);
 
-  attachChecker(enInput, feedback, item.sentence_en);
+  attachChecker(enInput, feedback, item.sentence_en, () => {
+    speak(item.sentence_en, speakButton);
+  });
   return row;
 }
 
@@ -183,12 +188,15 @@ function buildContextPracticeRow(item){
   const enInput = el('input', {type:'text', placeholder:'Nhập câu tiếng Anh...'});
   enInput.style.flex = "1";
   enRow.appendChild(enInput);
-  enRow.appendChild(createSpeakButton(item.sentence_en));
+  const speakButton = createSpeakButton(item.sentence_en);
+  enRow.appendChild(speakButton);
   const enFeedback = el('div', {class:'feedback-icon'});
   enField.appendChild(enRow);
   enField.appendChild(enFeedback);
   row.appendChild(enField);
-  attachChecker(enInput, enFeedback, item.sentence_en);
+  attachChecker(enInput, enFeedback, item.sentence_en, () => {
+    speak(item.sentence_en, speakButton);
+  });
 
   return row;
 }
