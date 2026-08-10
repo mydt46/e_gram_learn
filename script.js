@@ -111,7 +111,9 @@ const speakerSVG = `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stro
 
 function createSpeakButton(text){
   const button = el('button', {
-    class:'speak-btn', type:'button', 'aria-label':'Đọc câu tiếng Anh'
+    class:'speak-btn', type:'button',
+    'aria-label':`Đọc câu tiếng Anh: ${text}`,
+    'data-tooltip':text
   });
   button.innerHTML = speakerSVG;
   button.addEventListener('click', () => speak(text, button));
