@@ -323,6 +323,61 @@ const words = [
           },
         ],
       },
+      {
+        use: "----------------------Luyện thêm----------------------",
+        practice: [
+          {
+            sentence_vi: "Thầy Hùng đang dạy tôi tiếng Anh.",
+            sentence_en: "Mr Hung is teaching me English now",
+          },
+          {
+            sentence_vi:
+              "Các chính phủ trên khắp thế giới hiện đang ứng phó với vấn đề toàn cầu.",
+            sentence_en:
+              "The governments around the world are responding to the global problem at present",
+          },
+          {
+            sentence_vi:
+              "Người thợ làm bánh hiện đang tìm ra thêm nhiều công thức sử dụng nguyên liệu Việt Nam.",
+            sentence_en:
+              "The baker is now working out more recipes using Vietnamese ingredients",
+          },
+          {
+            sentence_vi: "Nhìn kìa! Em bé đang khóc rất to trong vườn.",
+            sentence_en: "Look! The baby is crying loudly in the garden",
+          },
+          {
+            sentence_vi: "Tại sao bạn lúc nào cũng gây ồn ào trong lớp?",
+            sentence_en: "Why are you always making noise in the class?",
+          },
+          {
+            sentence_vi: "Họ có đang ăn tối với bạn bè vào lúc này không?",
+            sentence_en:
+              "Are they having dinner with their friends at the moment?",
+          },
+          {
+            sentence_vi:
+              "Hiện tại Helen có đang viết thư không? Không, cô ấy không viết.",
+            sentence_en: "Is Helen writing a letter at present? No, she isn't",
+          },
+          {
+            sentence_vi:
+              "Kỹ sư trưởng hiện không hướng dẫn tất cả công nhân của các nhà máy.",
+            sentence_en:
+              "The chief engineer isn't instructing all the workers of plants now",
+          },
+          {
+            sentence_vi:
+              "Cô ấy có đang bay đến Paris vào ngày mai theo kế hoạch không?",
+            sentence_en: "Is she flying to Paris tomorrow as planned?",
+          },
+          {
+            sentence_vi:
+              "Bây giờ bạn đang làm gì? Tôi đang làm bài tập về nhà.",
+            sentence_en: "What are you doing now? I am doing homework",
+          },
+        ],
+      },
     ],
     context: [
       {

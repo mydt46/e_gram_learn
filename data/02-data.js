@@ -380,6 +380,82 @@ const words = [
           },
         ],
       },
+      {
+        use: "----------------------Luyện thêm----------------------",
+        practice: [
+          {
+            sentence_vi: "Bạn gội đầu bao lâu một lần?",
+            sentence_en: "How often do you wash your hair?",
+          },
+          {
+            sentence_vi: "Anh ấy thường về nhà vào khoảng sáu giờ.",
+            sentence_en: "He usually gets home about six o'clock.",
+          },
+          {
+            sentence_vi:
+              "Anh ấy thường chỉ ăn một chiếc bánh sandwich vào bữa trưa.",
+            sentence_en: "He usually just has a sandwich for lunch.",
+          },
+          {
+            sentence_vi:
+              "Không bao giờ là quá muộn để bắt đầu một chế độ ăn uống lành mạnh.",
+            sentence_en: "It is never too late to start eating a healthy diet.",
+          },
+          {
+            sentence_vi: "Chị gái tôi là y tá tại một bệnh viện địa phương.",
+            sentence_en: "My sister is a nurse in a local hospital.",
+          },
+          {
+            sentence_vi: "Bạn đến từ đâu? Tôi đến từ Nhật Bản.",
+            sentence_en: "Where do you come from? I come from Japan.",
+          },
+          {
+            sentence_vi:
+              "Anh ấy đẹp trai, thông minh, dí dỏm và nhìn chung là tâm điểm của sự chú ý.",
+            sentence_en:
+              "He is handsome, brilliant, witty, and generally the center of attention.",
+          },
+          {
+            sentence_vi: "Bạn có thích cá không?",
+            sentence_en: "Do you like fish?",
+          },
+          {
+            sentence_vi: "Cô ấy làm công việc dọn dẹp tại bệnh viện.",
+            sentence_en: "She works as a cleaner at the hospital.",
+          },
+          {
+            sentence_vi:
+              "Anh ấy thường ăn tối và xem TV lúc 7 giờ tối mỗi ngày.",
+            sentence_en:
+              "He often has dinner and watches TV at 7 pm every day.",
+          },
+          {
+            sentence_vi:
+              "Cô ấy luôn mua tất cả các tạp chí thời trang mới nhất.",
+            sentence_en: "She always buys all the latest fashion magazines.",
+          },
+          {
+            sentence_vi:
+              "Mẹ tôi luôn khóc mỗi khi bà ấy xem những câu chuyện tình yêu.",
+            sentence_en:
+              "My mother always cries whenever she sees love stories.",
+          },
+          {
+            sentence_vi:
+              "Bạn không cô đơn trên thế giới này bởi vì tôi luôn ở bên bạn.",
+            sentence_en:
+              "You are not lonely in the world because I always stand by you.",
+          },
+          {
+            sentence_vi: "Bạn muốn làm gì sau khi rời trường?",
+            sentence_en: "What do you want to do after leaving school?",
+          },
+          {
+            sentence_vi: "Dạo này chúng tôi không thường xuyên đi xem phim.",
+            sentence_en: "We don't go to the cinema very often these days.",
+          },
+        ],
+      },
     ],
     context: [
       {
