@@ -115,6 +115,15 @@ function speak(text, btnEl) {
   window.speechSynthesis.speak(utter);
 }
 
+function focusNextSentenceEn(currentInput) {
+  const panel = currentInput.closest(".lesson-panel");
+  if (!panel) return;
+
+  const inputs = [...panel.querySelectorAll(".sentence-en-input")];
+  const nextInput = inputs[inputs.indexOf(currentInput) + 1];
+  if (nextInput) nextInput.focus();
+}
+
 const speakerSVG = `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 9 8 9 13 4 13 20 8 15 3 15 3 9"></polygon><path d="M16 8a5 5 0 0 1 0 8"></path><path d="M19 5a9 9 0 0 1 0 14"></path></svg>`;
 
 function createSpeakButton(text) {
@@ -160,7 +169,7 @@ function buildPracticeRow(item) {
   // sentence_en — user input, checked, 40%
   const enField = el("div", { class: "field w-en" });
   const enInput = el("textarea", {
-    class: "practice-answer",
+    class: "practice-answer sentence-en-input",
     rows: "1",
     placeholder: "Nhập câu tiếng Anh...",
   });
@@ -176,6 +185,7 @@ function buildPracticeRow(item) {
   row.appendChild(speakField);
 
   attachChecker(enInput, feedback, item.sentence_en, () => {
+    focusNextSentenceEn(enInput);
     speak(item.sentence_en, speakButton);
   });
   return row;
@@ -202,6 +212,7 @@ function buildContextPracticeRow(item) {
     style: "display:flex; gap:8px; align-items:flex-start;",
   });
   const enInput = el("input", {
+    class: "sentence-en-input",
     type: "text",
     placeholder: "Nhập câu tiếng Anh...",
   });
@@ -214,6 +225,7 @@ function buildContextPracticeRow(item) {
   enField.appendChild(enFeedback);
   row.appendChild(enField);
   attachChecker(enInput, enFeedback, item.sentence_en, () => {
+    focusNextSentenceEn(enInput);
     speak(item.sentence_en, speakButton);
   });
 
