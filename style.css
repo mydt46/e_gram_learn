@@ -26,7 +26,7 @@ body {
   padding: 0;
 }
 body {
-  background:
+  /* background:
     radial-gradient(
       circle at 15% 10%,
       rgba(201, 162, 75, 0.1),
@@ -37,7 +37,7 @@ body {
       rgba(201, 162, 75, 0.08),
       transparent 45%
     ),
-    var(--ink);
+    var(--ink); */
   color: var(--text-main);
   font-family: var(--font-body);
   min-height: 100vh;
@@ -56,7 +56,7 @@ body {
   gap: 20px;
   border: 1px solid rgba(201, 162, 75, 0.28);
   border-radius: 12px;
-  background: rgba(34, 53, 43, 0.78);
+  background: #22352b;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 .top-menu a {
@@ -215,7 +215,7 @@ body {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(28px, 5vw, 44px);
-  color: var(--paper);
+  color: #5e5020;
   margin: 0 auto 6px;
   max-width: 900px;
 }
@@ -250,7 +250,7 @@ body {
   border: 1px solid rgba(201, 162, 75, 0.45);
   border-radius: 999px;
   background: transparent;
-  color: var(--gold-soft);
+  color: #817036;
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 600;
@@ -284,7 +284,7 @@ body {
 .sheet {
   max-width: 1000px;
   margin: 0 auto 40px;
-  background: var(--paper);
+  background: #f7f6f2;
   border-radius: 14px;
   padding: 30px 30px 34px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
@@ -337,7 +337,7 @@ body {
 }
 
 .exercise-block {
-  padding: 18px 0;
+  padding: 10px 0;
   border-top: 1px dashed var(--paper-line);
 }
 .exercise-block:first-of-type {
@@ -367,7 +367,7 @@ body {
   display: flex;
   gap: 10px;
   align-items: stretch;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   flex-wrap: wrap;
 }
 .field {
@@ -484,7 +484,10 @@ textarea.practice-reference {
   visibility: hidden;
   pointer-events: none;
   transform: translateY(4px);
-  transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
+  transition:
+    opacity 0.15s,
+    transform 0.15s,
+    visibility 0.15s;
 }
 .speak-btn:hover::after,
 .speak-btn:focus-visible::after {
