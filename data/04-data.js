@@ -31,6 +31,16 @@ const words = [
         ],
       },
       {
+        use: "kinh nghiệm, trải nghiệm",
+        practice: [
+          {
+            sentence_vi: "(Đây là lần đầu tiên tôi ăn loại thức ăn đó.)",
+            sentence_en:
+              "This is the first time I have ever eaten that kind of food.",
+          },
+        ],
+      },
+      {
         use: "Xảy ra trong quá khứ nhưng để lại dấu hiệu hoặc hậu quả ở hiện tại'",
         practice: [
           {
@@ -41,16 +51,6 @@ const words = [
             sentence_vi:
               "(Em bé đang khóc. Có phải cậu đã trêu chọc nó không?)",
             sentence_en: "The baby is crying. Have you made fun of him?",
-          },
-        ],
-      },
-      {
-        use: "kinh nghiệm, trải nghiệm",
-        practice: [
-          {
-            sentence_vi: "(Đây là lần đầu tiên tôi ăn loại thức ăn đó.)",
-            sentence_en:
-              "This is the first time I have ever eaten that kind of food.",
           },
         ],
       },
@@ -78,11 +78,12 @@ const words = [
             sentence_en: "My father has just washed his car",
           },
           {
-            sentence_vi: "Các học sinh gần đây đã thảo luận về câu hỏi này.",
+            sentence_vi:
+              "Các học sinh gần đây đã thảo luận về câu hỏi này.(recently)",
             sentence_en: "The students have discussed the question recently",
           },
           {
-            sentence_vi: "Mary chưa bao giờ đến Hà Nội.",
+            sentence_vi: "Mary chưa bao giờ đến Hà Nội.(be)",
             sentence_en: "Mary has never been to Hanoi",
           },
           {
@@ -90,15 +91,16 @@ const words = [
             sentence_en: "We have known each other for 5 years",
           },
           {
-            sentence_vi: "Cho đến nay, chúng tôi đã học được năm bài.",
+            sentence_vi: "Cho đến nay, chúng tôi đã học được năm bài.(so far)",
             sentence_en: "So far we have learned five lessons",
           },
           {
-            sentence_vi: "Chúng tôi đã là bạn qua thư trong một thời gian dài.",
+            sentence_vi:
+              "Chúng tôi đã là bạn qua thư trong một thời gian dài.(pen pals)",
             sentence_en: "We have been pen pals for a long time",
           },
           {
-            sentence_vi: "Họ đã không ở đây kể từ tuần trước.",
+            sentence_vi: "Họ đã không ở đây kể từ tuần trước.(stay)",
             sentence_en: "They have not stayed here since last week",
           },
           {
@@ -107,11 +109,11 @@ const words = [
           },
           {
             sentence_vi:
-              "Cho đến nay, Sandra đã cho anh trai cô ấy vay 200 đô la.",
+              "Cho đến nay, Sandra đã cho anh trai cô ấy vay 200 đô la.(so far)",
             sentence_en: "Sandra has lent her brother $200 so far",
           },
           {
-            sentence_vi: "Rashid vừa vượt qua kỳ thi lái xe.",
+            sentence_vi: "Rashid vừa vượt qua kỳ thi lái xe.(driving test)",
             sentence_en: "Rashid has just passed his driving test",
           },
           {
@@ -174,11 +176,11 @@ const words = [
             sentence_en: "She has not replied to my email",
           },
           {
-            sentence_vi: "Họ chưa hoàn thành dự án.",
+            sentence_vi: "Họ chưa hoàn thành dự án.(complete)",
             sentence_en: "They have not completed the project",
           },
           {
-            sentence_vi: "Peter chưa đến văn phòng.",
+            sentence_vi: "Peter chưa đến văn phòng.(arrive)",
             sentence_en: "Peter has not arrived at the office",
           },
           {
@@ -198,7 +200,7 @@ const words = [
             sentence_en: "He has not studied for the exam",
           },
           {
-            sentence_vi: "Các học sinh chưa nộp bài tập.",
+            sentence_vi: "Các học sinh chưa nộp bài tập.(assignments)",
             sentence_en: "The students have not submitted their assignments",
           },
           {
@@ -242,7 +244,7 @@ const words = [
             sentence_en: "David has not finished the report",
           },
           {
-            sentence_vi: "Chúng tôi chưa nghe tin gì từ anh ấy.",
+            sentence_vi: "Chúng tôi chưa nghe tin gì từ anh ấy.(heard)",
             sentence_en: "We have not heard from him",
           },
           {
@@ -271,7 +273,7 @@ const words = [
             sentence_en: "Has Tom seen this movie?",
           },
           {
-            sentence_vi: "Bạn đã từng đến Hà Nội chưa?",
+            sentence_vi: "Bạn đã từng đến Hà Nội chưa? (be)",
             sentence_en: "Have you ever been to Hanoi?",
           },
           {

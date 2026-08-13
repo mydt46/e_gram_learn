@@ -584,3 +584,12 @@ textarea.state-incorrect {
     right: 14px;
   }
 }
+
+#notes {
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  background: #f7f6f2;
+  border-radius: 14px;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}

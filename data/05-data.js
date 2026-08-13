@@ -9,7 +9,7 @@ const words = [
         practice: [
           {
             sentence_vi: "(Chị gái tôi đã làm việc ở đây từ năm 2010.)",
-            sentence_en: "My sitter has been working here since 2010.",
+            sentence_en: "My sister has been working here since 2010.",
           },
         ],
       },
@@ -36,7 +36,8 @@ const words = [
               "I have been trying to learn English for years, but I have not succeeded yet.",
           },
           {
-            sentence_vi: "Mary bị bẩn vì cô ấy đã làm việc trong vườn cả ngày.",
+            sentence_vi:
+              "Mary bị bệnh vì cô ấy đã làm việc trong vườn cả ngày.",
             sentence_en:
               "Mary is ill because she has been working in the garden all day.",
           },
@@ -336,9 +337,8 @@ const words = [
               "Susan really loves that film. She has seen it eight times",
           },
           {
-            sentence_vi:
-              "Bạn đã đọc gì rồi? Tôi đã đọc cuốn sách này. Bạn nghĩ gì về nó?",
-            sentence_en: "You already have read the book? What do you think?",
+            sentence_vi: "Bạn đã đọc cuốn sách đó chưa?. Bạn nghĩ gì về nó?",
+            sentence_en: "Have you already read the book? What do you think?",
           },
           {
             sentence_vi:
@@ -363,13 +363,13 @@ const words = [
             sentence_en: "It hasn't rained since lunchtime",
           },
           {
-            sentence_vi: "Helen đã đọc cuốn sách này ba lần.",
-            sentence_en: "Helen has read this book for three times",
+            sentence_vi: "Helen đã đọc cuốn sách này ba ngay.",
+            sentence_en: "Helen has read this book for three days",
           },
           {
-            sentence_vi: "Anh ấy kiệt sức vì đã làm việc liên tục hơn bốn giờ.",
+            sentence_vi: "Anh ấy kiệt sức vì đã làm việc liên tục hơn 12 giờ.",
             sentence_en:
-              "He is exhausted because he has worked continuously for more than four hours",
+              "He is exhausted because he has been working continuously for more than twelve hours",
           },
         ],
       },
