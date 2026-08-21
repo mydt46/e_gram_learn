@@ -7,7 +7,7 @@ const words = [
         use: "đang xảy ra tại một thời điểm trong quá khứ",
         practice: [
           {
-            sentence_vi: "(Vào lúc 7 giờ tối qua, chúng tôi đang ăn tối.)",
+            sentence_vi: "(Vào lúc 7 giờ tối qua, chúng tôi đang ăn tối.)(have/at)",
             sentence_en: "We were having dinner at 7 p.m yesterday",
           },
         ],
@@ -28,7 +28,7 @@ const words = [
         practice: [
           {
             sentence_vi:
-              "(Trong khi cô ấy đang tắm thì chuông điện thoại kêu.)",
+              "(Trong khi cô ấy đang tắm thì chuông điện thoại kêu.)(telephone)",
             sentence_en: "When she was having a bath, the telephone rang.",
           },
         ],
@@ -40,7 +40,7 @@ const words = [
         practice: [
           {
             sentence_vi:
-              "Vào giờ này ngày hôm qua, chúng tôi đang chơi quần vợt trong sân trường.",
+              "Vào giờ này ngày hôm qua, chúng tôi đang chơi quần vợt trong sân trường.(schoolyard)",
             sentence_en:
               "At this time yesterday we were playing tennis in the schoolyard.",
           },
@@ -56,13 +56,13 @@ const words = [
           },
           {
             sentence_vi:
-              "Bạn đang làm gì khi tôi gọi điện cho bạn? Tôi đang tắm.",
+              "Bạn đang làm gì khi tôi gọi điện cho bạn? Tôi đang tắm.(phone)",
             sentence_en:
               "What were you doing when I phoned you? I was having a bath.",
           },
           {
             sentence_vi:
-              "Cô ấy đang làm bài tập về nhà vào giờ này ngày hôm qua.",
+              "Cô ấy đang làm bài tập về nhà vào giờ này ngày hôm qua.(at the time)",
             sentence_en: "She was doing her homework at the time yesterday.",
           },
           {
@@ -74,12 +74,12 @@ const words = [
             sentence_en: "They were visiting the zoo at ten o'clock yesterday.",
           },
           {
-            sentence_vi: "Peter và tôi đang làm bài tập vào giờ này tối qua.",
+            sentence_vi: "Peter và tôi đang làm bài tập vào giờ này tối qua.(exercise)",
             sentence_en:
               "Peter and I were doing the exercise at this time last night.",
           },
           {
-            sentence_vi: "Lúc 7 giờ tối qua, bố tôi đang cho chim bồ câu ăn.",
+            sentence_vi: "Lúc 7 giờ tối qua, bố tôi đang cho chim bồ câu ăn.(pigeons)",
             sentence_en:
               "At 7 p.m last night my father was feeding the pigeons.",
           },
@@ -94,22 +94,22 @@ const words = [
             sentence_en: "When I arrived at this house, he was still sleeping.",
           },
           {
-            sentence_vi: "Đèn tắt trong khi chúng tôi đang ăn tối.",
+            sentence_vi: "Đèn tắt trong khi chúng tôi đang ăn tối.(go out)",
             sentence_en: "The light went out while we were having dinner.",
           },
           {
             sentence_vi:
-              "Bill đang ăn sáng khi tôi ghé qua nhà anh ấy vào sáng nay.",
+              "Bill đang ăn sáng khi tôi ghé qua nhà anh ấy vào sáng nay.(stop at)",
             sentence_en:
               "Bill was having breakfast when I stopped at his house this morning.",
           },
           {
-            sentence_vi: "Khi tôi đến nhà anh ấy, anh ấy đang làm việc.",
+            sentence_vi: "Khi tôi đến nhà anh ấy, anh ấy đang làm việc.(come to)",
             sentence_en: "When I came to his house, he was working.",
           },
           {
             sentence_vi:
-              "Khi chúng tôi đang băng qua đường, chúng tôi nhìn thấy một vụ tai nạn.",
+              "Khi chúng tôi đang băng qua đường, chúng tôi nhìn thấy một vụ tai nạn.(As/cross)",
             sentence_en: "As we were crossing the street, we saw an accident.",
           },
           {
@@ -120,22 +120,22 @@ const words = [
           },
           {
             sentence_vi:
-              "Bọn trẻ đang chơi bóng đá khi mẹ của chúng trở về nhà.",
+              "Bọn trẻ đang chơi bóng đá khi mẹ của chúng trở về nhà.(football/come back)",
             sentence_en:
               "The children were playing football when their mother came back home.",
           },
           {
-            sentence_vi: "Chuông reo trong khi Tom đang tắm.",
+            sentence_vi: "Chuông reo trong khi Tom đang tắm.(take a bath)",
             sentence_en: "The bell rang while Tom was taking a bath.",
           },
           {
             sentence_vi:
-              "Anh ấy đang ngồi trong ô tô thì tôi nhìn thấy anh ấy.",
+              "Anh ấy đang ngồi trong ô tô thì tôi nhìn thấy anh ấy.(a car)",
             sentence_en: "He was sitting in a car when I saw him.",
           },
           {
             sentence_vi:
-              "Chúng tôi đang dọn dẹp nhà cửa thì cô ấy đến vào ngày hôm qua.",
+              "Chúng tôi đang dọn dẹp nhà cửa thì cô ấy đến vào ngày hôm qua.(come)",
             sentence_en: "We were cleaning the house when she came yesterday.",
           },
         ],

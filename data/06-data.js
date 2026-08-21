@@ -17,7 +17,7 @@ const words = [
         practice: [
           {
             sentence_vi:
-              "(Cô ấy bật máy tính, đọc tin nhắn trong Facebook rồi trả lời nó.)",
+              "(Cô ấy bật máy tính, đọc tin nhắn trong Facebook rồi trả lời nó.)(turn on/answer)",
             sentence_en:
               "She turned on her computer, read the message on Facebook and answered it",
           },
@@ -27,7 +27,7 @@ const words = [
         use: "hồi ức, kỉ niệm",
         practice: [
           {
-            sentence_vi: "(Hồi còn nhỏ, tôi thường đi câu cá vào buổi chiều.)",
+            sentence_vi: "(Hồi còn nhỏ, tôi thường đi câu cá vào buổi chiều.)(used to/go fishing)",
             sentence_en:
               "When I was small, I used to go fishing in the afternoon.",
           },
@@ -43,28 +43,28 @@ const words = [
             sentence_en: "Mary went shopping with me yesterday.",
           },
           {
-            sentence_vi: "Viên cảnh sát đã lái xe đi cách đây mười phút.",
+            sentence_vi: "Viên cảnh sát đã lái xe đi cách đây mười phút.(drive away)",
             sentence_en: "The policeman drove away ten minutes ago.",
           },
           {
-            sentence_vi: "Nhà máy sản xuất bánh quy đã đóng cửa vào năm ngoái.",
+            sentence_vi: "Nhà máy sản xuất bánh quy đã đóng cửa vào năm ngoái.(biscuit factory)",
             sentence_en: "The biscuit factory closed last year.",
           },
           {
-            sentence_vi: "Hiệu trưởng đã đến trường vào năm 1985.",
+            sentence_vi: "Hiệu trưởng đã đến trường vào năm 1985.(headmaster)",
             sentence_en: "The headmaster came to the school in 1985.",
           },
           {
-            sentence_vi: "Bạn đã tiêu nhiều tiền vào tháng trước phải không?",
+            sentence_vi: "Bạn đã tiêu nhiều tiền vào tháng trước phải không?(spend)",
             sentence_en: "Did you spend a lot of money last month?",
           },
           {
-            sentence_vi: "Lần cuối tôi đến Tây Ban Nha là vào năm 1990.",
+            sentence_vi: "Lần cuối tôi đến Tây Ban Nha là vào năm 1990.(Spain)",
             sentence_en: "I last went to Spain in 1990.",
           },
           {
             sentence_vi:
-              "Cậu bé đã hoàn thành bài tập về nhà vào ngày hôm qua.",
+              "Cậu bé đã hoàn thành bài tập về nhà vào ngày hôm qua.(boy)",
             sentence_en: "The boy finished his homework yesterday.",
           },
           {
@@ -73,7 +73,7 @@ const words = [
           },
           {
             sentence_vi:
-              "Tôi đã không gặp bất kỳ rắc rối nào với chiếc xe của mình vào tuần trước.",
+              "Tôi đã không gặp bất kỳ rắc rối nào với chiếc xe của mình vào tuần trước.(trouble)",
             sentence_en: "I did not have any trouble with my car last week.",
           },
           {
@@ -87,23 +87,23 @@ const words = [
               "What did you do last weekend? I stayed at home and slept.",
           },
           {
-            sentence_vi: "Khi còn trẻ, cô ấy rất xinh đẹp và hấp dẫn.",
+            sentence_vi: "Khi còn trẻ, cô ấy rất xinh đẹp và hấp dẫn.(attractive)",
             sentence_en:
               "When she was young, she was beautiful and attractive.",
           },
           {
-            sentence_vi: "Bạn đã ở đâu vào tối qua?",
+            sentence_vi: "Bạn đã ở đâu vào tối qua?(be)",
             sentence_en: "Where were you last night?",
           },
           {
             sentence_vi:
-              "Người đàn ông bước ra khỏi xe, khóa xe lại và đi vào tòa nhà.",
+              "Người đàn ông bước ra khỏi xe, khóa xe lại và đi vào tòa nhà.(get out of/come into)",
             sentence_en:
               "The man got out of the car, locked it and came into the building.",
           },
           {
             sentence_vi:
-              "Bạn đã tham gia chuyến dã ngoại cùng họ vào tuần trước phải không?",
+              "Bạn đã tham gia chuyến dã ngoại cùng họ vào tuần trước phải không?(join/on a picnic)",
             sentence_en: "Did you join with them on a picnic last week?",
           },
         ],
