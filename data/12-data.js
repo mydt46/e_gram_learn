@@ -28,60 +28,54 @@ const words = [
       {
         use: "=====================Dịch câu: thì tương lai========================",
         practice: [
-          [
-            {
-              sentence_vi:
-                "Tôi sẽ đợi cho đến khi anh ấy viết xong cuốn tiểu thuyết.",
-              sentence_en: "I will wait until he finishes his novel.",
-            },
-            {
-              sentence_vi: "Khi bạn trở về, anh ấy sẽ mua nhà mới xong rồi.",
-              sentence_en:
-                "When you come back, he will already have bought a new house.",
-            },
-            {
-              sentence_vi:
-                "Vào thời điểm này mùa hè năm sau, chúng tôi sẽ đang nằm trên bãi biển.",
-              sentence_en:
-                "At this time next summer, we will be lying on the beach.",
-            },
-            {
-              sentence_vi:
-                "Tôi hy vọng trời sẽ tạnh mưa trước 5 giờ chiều nay.",
-              sentence_en:
-                "I hope it will have stopped raining by 5 o'clock this afternoon.",
-            },
-            {
-              sentence_vi:
-                "Tôi sẽ gọi cho bạn ngay khi máy bay hạ cánh tại sân bay.",
-              sentence_en:
-                "I will call you as soon as the plane lands at the airport.",
-            },
-            {
-              sentence_vi: "Đến tháng sau, tôi sẽ lên đường đi Ấn Độ.",
-              sentence_en: "By next month I will have left for India.",
-            },
-            {
-              sentence_vi: "Bộ phim sẽ kết thúc trước khi chúng ta đến đó.",
-              sentence_en: "The film will have ended by the time we get there.",
-            },
-            {
-              sentence_vi:
-                "Đến tháng Sáu năm sau, họ sẽ xây xong một ngôi nhà.",
-              sentence_en: "They will have built a house by June next year.",
-            },
-            {
-              sentence_vi:
-                "Chúng tôi sẽ bắt đầu kế hoạch của mình vào tuần tới.",
-              sentence_en: "We will start our plan next week.",
-            },
-            {
-              sentence_vi:
-                "Tôi sẽ đưa thư của bạn cho cô ấy khi tôi gặp cô ấy vào ngày mai.",
-              sentence_en:
-                "I will give her your letter when I see her tomorrow.",
-            },
-          ],
+          {
+            sentence_vi:
+              "Tôi sẽ đợi cho đến khi anh ấy viết xong cuốn tiểu thuyết.",
+            sentence_en: "I will wait until he finishes his novel.",
+          },
+          {
+            sentence_vi: "Khi bạn trở về, anh ấy sẽ mua nhà mới xong rồi.",
+            sentence_en:
+              "When you come back, he will already have bought a new house.",
+          },
+          {
+            sentence_vi:
+              "Vào thời điểm này mùa hè năm sau, chúng tôi sẽ đang nằm trên bãi biển.",
+            sentence_en:
+              "At this time next summer, we will be lying on the beach.",
+          },
+          {
+            sentence_vi: "Tôi hy vọng trời sẽ tạnh mưa trước 5 giờ chiều nay.",
+            sentence_en:
+              "I hope it will have stopped raining by 5 o'clock this afternoon.",
+          },
+          {
+            sentence_vi:
+              "Tôi sẽ gọi cho bạn ngay khi máy bay hạ cánh tại sân bay.",
+            sentence_en:
+              "I will call you as soon as the plane lands at the airport.",
+          },
+          {
+            sentence_vi: "Đến tháng sau, tôi sẽ lên đường đi Ấn Độ.",
+            sentence_en: "By next month I will have left for India.",
+          },
+          {
+            sentence_vi: "Bộ phim sẽ kết thúc trước khi chúng ta đến đó.",
+            sentence_en: "The film will have ended by the time we get there.",
+          },
+          {
+            sentence_vi: "Đến tháng Sáu năm sau, họ sẽ xây xong một ngôi nhà.",
+            sentence_en: "They will have built a house by June next year.",
+          },
+          {
+            sentence_vi: "Chúng tôi sẽ bắt đầu kế hoạch của mình vào tuần tới.",
+            sentence_en: "We will start our plan next week.",
+          },
+          {
+            sentence_vi:
+              "Tôi sẽ đưa thư của bạn cho cô ấy khi tôi gặp cô ấy vào ngày mai.",
+            sentence_en: "I will give her your letter when I see her tomorrow.",
+          },
         ],
       },
       {

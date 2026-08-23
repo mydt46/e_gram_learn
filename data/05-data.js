@@ -282,7 +282,7 @@ const words = [
             sentence_en: "She has learned English for three years",
           },
           {
-            sentence_vi: "Tôi đói. Tôi chưa ăn gì kể từ bữa sáng.",
+            sentence_vi: "Tôi đói. Tôi chưa ăn gì kể từ bữa sáng.(since)",
             sentence_en: "I'm hungry. I haven't eaten anything since breakfast",
           },
           {
@@ -290,13 +290,14 @@ const words = [
             sentence_en: "He has never driven a car before",
           },
           {
-            sentence_vi: "Chúng tôi đã biết nhau kể từ khi còn học trung học.",
+            sentence_vi:
+              "Chúng tôi đã biết nhau kể từ khi còn học trung học.(be at)",
             sentence_en:
               "We have known each other since we were at high school",
           },
           {
             sentence_vi:
-              "Mọi thứ đang diễn ra tốt đẹp. Cho đến nay chúng tôi chưa gặp bất kỳ vấn đề nào.",
+              "Mọi thứ đang diễn ra tốt đẹp. Cho đến nay chúng tôi chưa gặp bất kỳ vấn đề nào.(go well/have/so far)",
             sentence_en:
               "Everything is going well. We haven't had any problem so far",
           },
@@ -310,29 +311,30 @@ const words = [
           },
           {
             sentence_vi:
-              "Bạn đã bao giờ leo núi Everest chưa? Không, tôi chưa bao giờ. Nhưng tôi chắc chắn sẽ leo nếu có cơ hội.",
+              "Bạn đã bao giờ leo núi Everest chưa? Không, tôi chưa bao giờ. Nhưng tôi chắc chắn sẽ leo nếu có cơ hội.(Mount everest/never/be sure/a chance)",
             sentence_en:
               "Have you ever climbed Mount Everest? No, I have never had. But I'm sure I will, if I have a chance",
           },
           {
             sentence_vi:
-              "Thật tuyệt khi được gặp lại bạn. Chúng ta đã không gặp nhau trong một thời gian dài.",
+              "Thật tuyệt khi được gặp lại bạn. Chúng ta đã không gặp nhau trong một thời gian dài.(to see you again/see each other)",
             sentence_en:
               "It is nice to see you again. We haven't seen each other for a long time",
           },
           {
-            sentence_vi: "Tôi đã quên chìa khóa. Tôi không thể mở cửa bây giờ.",
+            sentence_vi:
+              "Tôi đã quên chìa khóa. Tôi không thể mở cửa bây giờ.(forget/unlock)",
             sentence_en: "I have forgotten my key. I can't unlock the door now",
           },
           {
             sentence_vi:
-              "Eric lại đang gọi điện cho bạn gái của anh ấy. Đây là lần thứ ba anh ấy gọi cho cô ấy.",
+              "Eric lại đang gọi điện cho bạn gái của anh ấy. Đây là lần thứ ba anh ấy gọi cho cô ấy.(third)",
             sentence_en:
               "Eric is calling his girlfriend again. That is the third time he has called her",
           },
           {
             sentence_vi:
-              "Susan thực sự yêu thích bộ phim đó. Cô ấy đã xem nó tám lần.",
+              "Susan thực sự yêu thích bộ phim đó. Cô ấy đã xem nó tám lần.(love)",
             sentence_en:
               "Susan really loves that film. She has seen it eight times",
           },
@@ -342,12 +344,13 @@ const words = [
           },
           {
             sentence_vi:
-              "Tôi chưa bao giờ đến sở thú trước đây. Thật là một cảm giác thú vị khi được đến một nơi mà tôi chưa từng đến.",
+              "Tôi chưa bao giờ đến sở thú trước đây. Thật là một cảm giác thú vị khi được đến một nơi mà tôi chưa từng đến.(go somewhere)",
             sentence_en:
               "I have never gone to a zoo before. It is a nice feeling to go somewhere I have never been before",
           },
           {
-            sentence_vi: "Richard đã làm cùng một công việc trong 20 năm.",
+            sentence_vi:
+              "Richard đã làm cùng một công việc trong 20 năm.(the same job)",
             sentence_en: "Richard has done the same job for 20 years",
           },
           {
@@ -367,7 +370,8 @@ const words = [
             sentence_en: "Helen has read this book for three days",
           },
           {
-            sentence_vi: "Anh ấy kiệt sức vì đã làm việc liên tục hơn 12 giờ.",
+            sentence_vi:
+              "Anh ấy kiệt sức vì đã làm việc liên tục hơn 12 giờ.(for more than)",
             sentence_en:
               "He is exhausted because he has been working continuously for more than twelve hours",
           },

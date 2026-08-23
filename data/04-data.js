@@ -22,11 +22,16 @@ const words = [
         ],
       },
       {
-        use: "Lặp đi lặp lại nhiều lần 'trong quá khứ'",
+        use: "Xảy ra trong quá khứ nhưng để lại dấu hiệu hoặc hậu quả ở hiện tại'",
         practice: [
           {
-            sentence_vi: "(Cô ấy đã xem bộ phim này vài lần rồi.)",
-            sentence_en: "She has seen this film several times.",
+            sentence_vi: "(Bọn trẻ rất bẩn. Chúng đã ở đâu thế?)",
+            sentence_en: "The children are dirty. Where have they been?",
+          },
+          {
+            sentence_vi:
+              "(Em bé đang khóc. Có phải cậu đã trêu chọc nó không?)",
+            sentence_en: "The baby is crying. Have you made fun of him?",
           },
         ],
       },
@@ -41,16 +46,11 @@ const words = [
         ],
       },
       {
-        use: "Xảy ra trong quá khứ nhưng để lại dấu hiệu hoặc hậu quả ở hiện tại'",
+        use: "Lặp đi lặp lại nhiều lần 'trong quá khứ'",
         practice: [
           {
-            sentence_vi: "(Bọn trẻ rất bẩn. Chúng đã ở đâu thế?)",
-            sentence_en: "The children are dirty. Where have they been?",
-          },
-          {
-            sentence_vi:
-              "(Em bé đang khóc. Có phải cậu đã trêu chọc nó không?)",
-            sentence_en: "The baby is crying. Have you made fun of him?",
+            sentence_vi: "(Cô ấy đã xem bộ phim này vài lần rồi.)",
+            sentence_en: "She has seen this film several times.",
           },
         ],
       },

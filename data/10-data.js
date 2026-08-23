@@ -7,7 +7,7 @@ const words = [
         use: "Một quyết định tại thời điểm nói",
         practice: [
           {
-            sentence_vi: "(Chúng tôi sẽ xem để có thể giúp gì cho anh.)",
+            sentence_vi: "(Chúng tôi sẽ xem để có thể giúp gì cho anh.)(what)",
             sentence_en: "We will see what we can do to help you",
           },
         ],
@@ -26,52 +26,50 @@ const words = [
       {
         use: "=====================Dịch câu========================",
         practice: [
-          [
-            {
-              sentence_vi:
-                "Bạn sẽ đi du lịch đến London vào tuần tới phải không?",
-              sentence_en: "Are you going to take a trip to London next week?",
-            },
-            {
-              sentence_vi: "Cô ấy sẽ tưới hoa vào tháng tới.",
-              sentence_en: "She is going to water the flowers next month.",
-            },
-            {
-              sentence_vi: "Họ sẽ xây một cây cầu mới ở tỉnh này vào năm tới.",
-              sentence_en:
-                "They are going to build a new bridge in this province next year.",
-            },
-            {
-              sentence_vi: "Ngày mai cô ấy sẽ gửi lá thư đến Hà Nội.",
-              sentence_en: "Tomorrow she is going to send the letter to Hanoi.",
-            },
-            {
-              sentence_vi:
-                "Năm 2020, cô ấy chuyển đến sống ở Thành phố Hồ Chí Minh.",
-              sentence_en: "In 2030 she will move to live in Ho Chi Minh City.",
-            },
-            {
-              sentence_vi: "Tôi sẽ gặp bố mẹ tôi sau một giờ nữa.",
-              sentence_en: "I am going to meet my parents in an hour.",
-            },
-            {
-              sentence_vi: "Tôi nghĩ ngày mai trời sẽ nắng.",
-              sentence_en: "I think it will be sunny tomorrow.",
-            },
-            {
-              sentence_vi: "Tôi chắc chắn anh ấy sẽ vượt qua kỳ thi.",
-              sentence_en: "I am sure he will pass the exam.",
-            },
-            {
-              sentence_vi: "Tôi sẽ ở nhà nếu trời mưa.",
-              sentence_en: "I will stay home if it rains.",
-            },
-            {
-              sentence_vi: "Anh ấy sẽ gửi lá thư khi anh ấy đến bưu điện.",
-              sentence_en:
-                "He will send the letter when he goes to the post office.",
-            },
-          ],
+          {
+            sentence_vi:
+              "Bạn sẽ đi du lịch đến London vào tuần tới phải không?(take a trip)",
+            sentence_en: "Are you going to take a trip to London next week?",
+          },
+          {
+            sentence_vi: "Cô ấy sẽ tưới hoa vào tháng tới.",
+            sentence_en: "She is going to water the flowers next month.",
+          },
+          {
+            sentence_vi: "Họ sẽ xây một cây cầu mới ở tỉnh này vào năm tới.",
+            sentence_en:
+              "They are going to build a new bridge in this province next year.",
+          },
+          {
+            sentence_vi: "Ngày mai cô ấy sẽ gửi lá thư đến Hà Nội.",
+            sentence_en: "Tomorrow she is going to send the letter to Hanoi.",
+          },
+          {
+            sentence_vi:
+              "Năm 2030, cô ấy chuyển đến sống ở Thành phố Hồ Chí Minh.",
+            sentence_en: "In 2030 she will move to live in Ho Chi Minh City.",
+          },
+          {
+            sentence_vi: "Tôi sẽ gặp bố mẹ tôi sau một giờ nữa.",
+            sentence_en: "I am going to meet my parents in an hour.",
+          },
+          {
+            sentence_vi: "Tôi nghĩ ngày mai trời sẽ nắng.(be)",
+            sentence_en: "I think it will be sunny tomorrow.",
+          },
+          {
+            sentence_vi: "Tôi chắc chắn anh ấy sẽ vượt qua kỳ thi.",
+            sentence_en: "I am sure he will pass the exam.",
+          },
+          {
+            sentence_vi: "Tôi sẽ ở nhà nếu trời mưa.",
+            sentence_en: "I will stay home if it rains.",
+          },
+          {
+            sentence_vi: "Anh ấy sẽ gửi lá thư khi anh ấy đến bưu điện.",
+            sentence_en:
+              "He will send the letter when he goes to the post office.",
+          },
         ],
       },
       {

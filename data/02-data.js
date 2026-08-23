@@ -54,7 +54,7 @@ const words = [
         ],
       },
       {
-        use: "nghề nghiệp, sở thích",
+        use: "nghề nghiệp",
         practice: [
           {
             sentence_vi: "Mẹ tôi là bác sĩ trong một bệnh viện lớn",
@@ -64,6 +64,11 @@ const words = [
             sentence_vi: "Các anh trai tôi đều làm thợ sửa chữa.",
             sentence_en: "My brothers work as mechanics.",
           },
+        ],
+      },
+      {
+        use: "sở thích",
+        practice: [
           {
             sentence_vi:
               "Tôi thích đi bộ dưới trời mưa vì nó cho tôi sự dễ chịu.",
@@ -388,17 +393,17 @@ const words = [
             sentence_en: "How often do you wash your hair?",
           },
           {
-            sentence_vi: "Anh ấy thường về nhà vào khoảng sáu giờ.",
+            sentence_vi: "Anh ấy thường về nhà vào khoảng sáu giờ.(get home)",
             sentence_en: "He usually gets home about six o'clock.",
           },
           {
             sentence_vi:
-              "Anh ấy thường chỉ ăn một chiếc bánh sandwich vào bữa trưa.",
+              "Anh ấy thường chỉ ăn một chiếc bánh sandwich vào bữa trưa.(have)",
             sentence_en: "He usually just has a sandwich for lunch.",
           },
           {
             sentence_vi:
-              "Không bao giờ là quá muộn để bắt đầu một chế độ ăn uống lành mạnh.",
+              "Không bao giờ là quá muộn để bắt đầu một chế độ ăn uống lành mạnh.(start eating)",
             sentence_en: "It is never too late to start eating a healthy diet.",
           },
           {
@@ -411,7 +416,7 @@ const words = [
           },
           {
             sentence_vi:
-              "Anh ấy đẹp trai, thông minh, dí dỏm và nhìn chung là tâm điểm của sự chú ý.",
+              "Anh ấy đẹp trai, thông minh, dí dỏm và nhìn chung là tâm điểm của sự chú ý.(brilliant/witty)",
             sentence_en:
               "He is handsome, brilliant, witty, and generally the center of attention.",
           },
@@ -420,7 +425,8 @@ const words = [
             sentence_en: "Do you like fish?",
           },
           {
-            sentence_vi: "Cô ấy làm công việc dọn dẹp tại bệnh viện.",
+            sentence_vi:
+              "Cô ấy làm công việc dọn dẹp tại bệnh viện.(the hospital)",
             sentence_en: "She works as a cleaner at the hospital.",
           },
           {
@@ -436,7 +442,7 @@ const words = [
           },
           {
             sentence_vi:
-              "Mẹ tôi luôn khóc mỗi khi bà ấy xem những câu chuyện tình yêu.",
+              "Mẹ tôi luôn khóc mỗi khi bà ấy xem những câu chuyện tình yêu.(whenever)",
             sentence_en:
               "My mother always cries whenever she sees love stories.",
           },
@@ -451,7 +457,8 @@ const words = [
             sentence_en: "What do you want to do after leaving school?",
           },
           {
-            sentence_vi: "Dạo này chúng tôi không thường xuyên đi xem phim.",
+            sentence_vi:
+              "Dạo này chúng tôi không thường xuyên đi xem phim.(cinema/very often)",
             sentence_en: "We don't go to the cinema very often these days.",
           },
         ],

@@ -332,13 +332,13 @@ const words = [
           },
           {
             sentence_vi:
-              "Các chính phủ trên khắp thế giới hiện đang ứng phó với vấn đề toàn cầu.",
+              "Các chính phủ trên khắp thế giới hiện đang ứng phó với vấn đề toàn cầu.(around/respond)",
             sentence_en:
               "The governments around the world are responding to the global problem at present",
           },
           {
             sentence_vi:
-              "Người thợ làm bánh hiện đang tìm ra thêm nhiều công thức sử dụng nguyên liệu Việt Nam.",
+              "Người thợ làm bánh hiện đang tìm ra thêm nhiều công thức sử dụng nguyên liệu Việt Nam.(working out/more/ingredient)",
             sentence_en:
               "The baker is now working out more recipes using Vietnamese ingredients",
           },
@@ -347,28 +347,30 @@ const words = [
             sentence_en: "Look! The baby is crying loudly in the garden",
           },
           {
-            sentence_vi: "Tại sao bạn lúc nào cũng gây ồn ào trong lớp?",
+            sentence_vi:
+              "Tại sao bạn lúc nào cũng gây ồn ào trong lớp?(make noise)",
             sentence_en: "Why are you always making noise in the class?",
           },
           {
-            sentence_vi: "Họ có đang ăn tối với bạn bè vào lúc này không?",
+            sentence_vi:
+              "Họ có đang ăn tối với bạn bè vào lúc này không?(at the moment)",
             sentence_en:
               "Are they having dinner with their friends at the moment?",
           },
           {
             sentence_vi:
-              "Hiện tại Helen có đang viết thư không? Không, cô ấy không viết.",
+              "Hiện tại Helen có đang viết thư không? Không, cô ấy không viết.(at present)",
             sentence_en: "Is Helen writing a letter at present? No, she isn't",
           },
           {
             sentence_vi:
-              "Kỹ sư trưởng hiện không hướng dẫn tất cả công nhân của các nhà máy.",
+              "Kỹ sư trưởng hiện không hướng dẫn tất cả công nhân của các nhà máy.(isn't/instructing/plants/now)",
             sentence_en:
               "The chief engineer isn't instructing all the workers of plants now",
           },
           {
             sentence_vi:
-              "Cô ấy có đang bay đến Paris vào ngày mai theo kế hoạch không?",
+              "Cô ấy có đang bay đến Paris vào ngày mai theo kế hoạch không?(as planned)",
             sentence_en: "Is she flying to Paris tomorrow as planned?",
           },
           {

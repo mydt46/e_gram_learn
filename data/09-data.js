@@ -9,7 +9,7 @@ const words = [
         practice: [
           {
             sentence_vi:
-              "(Tôi vẫn đang nghĩ về điều đó trước khi cậu đề cập tới.)",
+              "(Tôi vẫn đang nghĩ về điều đó trước khi cậu đề cập tới.)(mention)",
             sentence_en:
               "I had been thinking about that before you mentioned it.",
           },
@@ -20,7 +20,7 @@ const words = [
         practice: [
           {
             sentence_vi:
-              "(Cô ấy đã trượt bài kiểm tra cuối kì vì cô ấy không tham gia lớp học.)",
+              "(Cô ấy đã trượt bài kiểm tra cuối kì vì cô ấy không tham gia lớp học.)(test/attend)",
             sentence_en:
               "She didn't pass the final test because she hadn't been attending class",
           },
@@ -33,31 +33,31 @@ const words = [
         practice: [
           {
             sentence_vi:
-              "Chúng tôi đã chơi quần vợt được nửa giờ thì trời bắt đầu mưa.",
+              "Chúng tôi đã chơi quần vợt được nửa giờ thì trời bắt đầu mưa.(start to)",
             sentence_en:
               "We had been playing for half an hour when it started to rain.",
           },
           {
             sentence_vi:
-              "Tôi đã đợi được 20 phút thì nhận ra mình đang ở nhầm nhà hàng.",
+              "Tôi đã đợi được 20 phút thì nhận ra mình đang ở nhầm nhà hàng.(realised)",
             sentence_en:
               "I had been waiting for 20 minutes when I realised I was in the wrong restaurant.",
           },
           {
             sentence_vi:
-              "Vào thời điểm nhà máy đóng cửa, Sarah đã làm việc ở đó được năm năm.",
+              "Vào thời điểm nhà máy đóng cửa, Sarah đã làm việc ở đó được năm năm.(close down)",
             sentence_en:
               "At the time the factory closed down, Sarah had been working there for five years.",
           },
           {
             sentence_vi:
-              "Dàn nhạc đã chơi được khoảng mười phút thì một người đàn ông trong khán giả bắt đầu la hét.",
+              "Dàn nhạc đã chơi được khoảng mười phút thì một người đàn ông trong khán giả bắt đầu la hét.(orchestra/audience/shouting)",
             sentence_en:
               "The orchestra had been playing for about ten minutes when a man in the audience started shouting.",
           },
           {
             sentence_vi:
-              "Tôi đã đi bộ dọc theo con đường được mười phút thì một chiếc ô tô đột nhiên dừng lại ngay phía sau tôi.",
+              "Tôi đã đi bộ dọc theo con đường được mười phút thì một chiếc ô tô đột nhiên dừng lại ngay phía sau tôi.(along/just)",
             sentence_en:
               "I had been walking along the road for ten minutes when a car suddenly stopped just behind me.",
           },
